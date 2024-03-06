@@ -56,15 +56,9 @@ public class Program {
                         System.out.println(e.getMessage());
                     }
                 }
-                case 0 -> {
-                    flag = false;
-                }
-                default -> {
-                    System.out.println("Выберите действие из списка (0-3)");
-                }
+                case 0 -> flag = false;
+                default -> System.out.println("Выберите действие из списка (0-3)");
             }
         } while (flag);
-
-
     }
 }
